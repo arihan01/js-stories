@@ -7,6 +7,8 @@ img {
     display: flex;
 }
 
+/* box area */
+
 .slide {
     width: 400px;
     height: 800px;
@@ -16,13 +18,16 @@ img {
     
 }
 
+/* image */
+
 .slide-items {
     position: relative;
     grid-area: 1/1;
-    border-radius: 5px;
 }
 
-.slide-nav {
+/* next and prev buttons */
+
+.slide-nav { 
     grid-area: 1/1;
     z-index: 1;
     display: grid;
@@ -34,6 +39,8 @@ img {
     opacity: 0;
 }
 
+/* inactive image */
+
 .slide-items>* {
     padding: 20px;
     position: absolute;
@@ -42,11 +49,15 @@ img {
     pointer-events: none;
 }
 
+/* active image */
+
 .slide-items>.active {
     position: relative;
     opacity: 1;
     pointer-events: initial;
 }
+
+/* slider bar */
 
 .slide-thumb {
     display: flex;
@@ -54,12 +65,12 @@ img {
 }
 
 .slide-thumb>span {
-    flex: 1;
+    flex: auto;
     display: block;
-    height: 3px;
+    height: 4px;
     background: rgba(140, 140, 140, 0.4);
     margin: 8px;
-    border-radius: 3px;
+    border-radius: 4px;
     overflow: hidden;
 }
 
@@ -70,8 +81,11 @@ img {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 3px;
     transform: translateX(-100%);
-    animation: thumb 5s forwards linear;
+    animation: thumb 5s forwards linear; 
+            /* name, duration, fill-mode, timing-function */
 }
+
+/* image */
 
 .item *{
     width: 360px;
@@ -79,6 +93,8 @@ img {
     position: absolute;
     
 }
+
+/* name */
 
 .itemName {
     height: auto;
@@ -93,6 +109,8 @@ img {
     text-shadow: 1px 1px 1px black;
 
 }
+
+/* description */
 
 p {
     color: white;
