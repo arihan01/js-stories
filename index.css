@@ -124,6 +124,6 @@ p {
 
 @keyframes thumb {
     to {
-        transform: initial;
+        transform: none;
     }
 }
