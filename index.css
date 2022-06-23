@@ -42,11 +42,8 @@ img {
 /* inactive image */
 
 .slide-items>* {
-    padding: 20px;
     position: absolute;
-    top: 0px;
     opacity: 0;
-    pointer-events: none;
 }
 
 /* active image */
@@ -54,7 +51,6 @@ img {
 .slide-items>.active {
     position: relative;
     opacity: 1;
-    pointer-events: initial;
 }
 
 /* slider bar */
@@ -68,7 +64,7 @@ img {
     flex: auto;
     display: block;
     height: 4px;
-    background: rgba(140, 140, 140, 0.4);
+    background: rgba(0, 0, 0, 0.4);
     margin: 8px;
     border-radius: 4px;
     overflow: hidden;
@@ -88,7 +84,7 @@ img {
 /* image */
 
 .item *{
-    width: 360px;
+    width: 400px;
     height: 650px ;
     position: absolute;
     
@@ -104,8 +100,7 @@ img {
     border-radius: 5px;
     padding: 5px;
     position: absolute;
-    top: 8px;
-    left: 25px;
+    left: 20px;
     text-shadow: 1px 1px 1px black;
 
 }
@@ -113,12 +108,11 @@ img {
 /* description */
 
 p {
+    max-width: 90%;
     color: white;
     position: absolute;
-    top: 660px;
-    left: 25px;
-    padding: 5px;
-    padding-bottom: 15px;
+    top: 670px;
+    left: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
