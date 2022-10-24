@@ -1,5 +1,6 @@
-body {
+{
     background-color: rgba(0, 0, 0, 0.6);
+
 }
 
 .story {
@@ -31,6 +32,9 @@ body {
 #images #next {
     cursor: pointer;
     position: absolute;
+    width: 50px;
+    transition: all 0.3s ease;
+    border-radius: 0 3px 3px 0;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
@@ -40,29 +44,18 @@ body {
     line-height: 35;
 }
 
+#images #prev:hover,
+#images #next:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
 #images #prev {
     left: 0px;
 }
 
 #images #next {
     right: 0px;
-}
-
-.up,
-.down {
-    padding: 5px 10px;
-    font-size: 24px;
-    text-align: center;
-    font-weight: bold;
-    cursor: pointer;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    position: relative;
 }
 
 .dots {
@@ -82,4 +75,259 @@ body {
 
 .dots #dot.active {
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+.up,
+.down {
+    padding: 5px 10px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px rgb(70, 70, 70);
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+
+.up:hover,
+.down:hover {
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.up:active,
+.down:active {
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 3px #666;
+    transform: translateY(2px);
+}
+
+.desc {
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dots #dot {
+    cursor: pointer;
+    margin: 5px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dots #dot.active {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.desc {
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+
+    height: 40px;
+    cursor: pointer;
+}
+
+.desc:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.desc:active {
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+    transform: translateY(1px);
+}
+
+.info {
+    background-color: white;
+    color: black;
+    width: 400px;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info table {
+    padding-left: 40px;
+    margin-left: 40px;
+}
+
+.info table,
+td {
+    border: 2px solid;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+.info h4 {
+    padding-left: 20px;
+}
+
+.info .d-info {
+    padding: 10px;
+}
+
+.info .sizes {
+    padding-left: 20px;
+}
+
+.back {
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dots #dot {
+    cursor: pointer;
+    margin: 5px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dots #dot.active {
+    background-color: rgba(0, 0, 0, 0.7);
+
+    height: 40px;
+    cursor: pointer;
+}
+
+.back:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.back:active {
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+    transform: translateY(1px);
+}
+
+.cart,
+.wl {
+    width: 49%;
+    border-radius: 50px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 25px;
+    background: rgb(43, 43, 43);
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 50px;
+}
+
+.cart span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+.cart span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transition: 0.5s;
+    padding-left: 5px;
+}
+
+.cart:hover span {
+    padding-bottom: 0px;
+}
+
+.cart:hover span:after {
+    opacity: 1;
+}
+
+.cart:active {
+    background-color: #555555;
+    transform: translateY(1px);
+}
+
+.wl span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+.wl span:after {
+    content: '\2665';
+    font-size: 1em;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transition: 0.5s;
+    padding-left: 5px;
+}
+
+.wl:hover span {
+    padding-bottom: 3px;
+}
+
+.wl:hover span:after {
+    opacity: 1;
+}
+
+.wl:active {
+    background-color: #555555;
+    transform: translateY(1px);
+
 }

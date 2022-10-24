@@ -69,3 +69,11 @@ function showStory(storyName) { // stores each set as array element and changes 
     }
     document.getElementById(storyName).style.display = "block";
 }
+
+// switch between info page and images
+function showHide(x, y) {
+    if (document.getElementById(x).style.display === "none") {
+        document.getElementById(x).style.display = "block";
+        document.getElementById(y).style.display = "none";
+    } 
+}
