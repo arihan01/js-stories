@@ -26,7 +26,49 @@
             <a id="prev" title="Previous">PREV</a>
             <a id="next" title="Next">NEXT</a>
         </div>
+        <button id="desc1" class="desc" onclick="showHide('info1','story1')">&#x2304; &nbsp; Product 1 Information
+            &nbsp;
+            &#x2304;</button>
+
+        <div class="dots">
+            <span id="dot" class="dot1"></span>
+            <span id="dot" class="dot1"></span>
+            <span id="dot" class="dot1"></span>
+        </div>
         <button class="down" onclick="showStory('story2')">DOWN</button>
+    </div>
+
+    <div id="info1" class="info" style="display: none;">  <!-- INFO PAGE THAT IS HIDDEN AND SHOWN (SWITCHES BETWEEN STORY AND INFO PAGE) -->
+        <nav class="back-button">
+            <button id="back1" class="back" onclick="showHide('story1','info1')"><span>&#x2303; &nbsp; Back &nbsp;
+                    &#x2303;</span></button>
+        </nav>
+        <h4>First item</h4>
+        <hr width="350px" align="centre">
+        <p class="sizes">Size Chart</p>
+        <div class="table">
+            <table>
+                <tr>
+                    <td>S</td>
+                    <td>30"</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>35"</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>40"</td>
+                </tr>
+            </table>
+        </div>
+        <p class="d-info">The Flexible Box Module, usually referred to as flexbox, was designed as a
+            one-dimensional layout model, and as a method that could offer space distribution between items in
+            an interface and powerful alignment capabilities. <br> <br> This article gives an outline of the main
+            features
+            of flexbox, which we will be exploring in more detail in the rest of these guides.</p>
+        <button class="cart"><span>Cart</span></button>
+        <button class="wl"><span>Wishlist</span></button>
     </div>
 
     <div id="story2" class="story" style="display: none;">
@@ -40,19 +82,100 @@
             <a id="prev" title="Previous">PREV</a>
             <a id="next" title="Next">NEXT</a>
         </div>
+        <button id="desc2" class="desc" onclick="showHide('info2','story2')">&#x2304; &nbsp; Product 2 Information
+            &nbsp;
+            &#x2304;</button>
+        <div class="dots">
+            <span id="dot" class="dot2"></span>
+            <span id="dot" class="dot2"></span>
+        </div>
         <button class="down" onclick="showStory('story3')">DOWN</button>
+    </div>
+
+    <div id="info2" class="info" style="display: none;">
+        <nav class="back-button">
+            <button id="back2" class="back" onclick="showHide('story2','info2')"><span>&#x2303; &nbsp; Back &nbsp;
+                    &#x2303;</span></button>
+        </nav>
+        <h4>Second item</h4>
+        <hr width="350px" align="centre">
+        <p class="sizes">Size Chart</p>
+        <div class="table">
+            <table>
+                <tr>
+                    <td>S</td>
+                    <td>30"</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>35"</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>40"</td>
+                </tr>
+            </table>
+        </div>
+        <p class="d-info">The Flexible Box Module, usually referred to as flexbox, was designed as a
+            one-dimensional layout model, and as a method that could offer space distribution between items in
+            an interface and powerful alignment capabilities. <br> <br> This article gives an outline of the main
+            features
+            of flexbox, which we will be exploring in more detail in the rest of these guides.</p>
+        <button class="cart"><span>Cart</span></button>
+        <button class="wl"><span>Wishlist</span></button>
     </div>
 
     <div id="story3" class="story" style="display: none;">
         <button class="up" onclick="showStory('story2')">UP</button>
         <div id="images" class="images3">
+            <video id="image" class="image3" autoplay loop src="pixels.mp4.mp4"></video>
             <img id="image" class="image3"
                 src="https://images.unsplash.com/photo-1512692723619-8b3e68365c9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
 
             <a id="prev" title="Previous">PREV</a>
             <a id="next" title="Next">NEXT</a>
         </div>
+        <button id="desc3" class="desc" onclick="showHide('info3','story3')">&#x2304; &nbsp; Product 3 Information
+            &nbsp;
+            &#x2304;</button>
+        <div class="dots">
+            <span id="dot" class="dot3"></span>
+            <span id="dot" class="dot3"></span>
+        </div>
         <button class="down" onclick="showStory('story1')">DOWN</button>
+    </div>
+
+    <div id="info3" class="info" style="display: none;">
+        <nav class="back-button">
+            <button id="back2" class="back" onclick="showHide('story3','info3')"><span>&#x2303; &nbsp; Back &nbsp;
+                    &#x2303;</span></button>
+        </nav>
+        <h4>Third item</h4>
+        <hr width="350px" align="centre">
+        <p class="sizes">Size Chart</p>
+        <div class="table">
+            <table>
+                <tr>
+                    <td>S</td>
+                    <td>30"</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>35"</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>40"</td>
+                </tr>
+            </table>
+        </div>
+        <p class="d-info">The Flexible Box Module, usually referred to as flexbox, was designed as a
+            one-dimensional layout model, and as a method that could offer space distribution between items in
+            an interface and powerful alignment capabilities. <br> <br> This article gives an outline of the main
+            features
+            of flexbox, which we will be exploring in more detail in the rest of these guides.</p>
+        <button class="cart"><span>Cart</span></button>
+        <button class="wl"><span>Wishlist</span></button>
     </div>
 
 </body>
