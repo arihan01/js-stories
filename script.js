@@ -1,13 +1,16 @@
-function createCarousel(images) { // reusable function to render a set 
+function createCarousel(images, dots) { // reusable function to render a set 
 
     var currentImage = 0;
 
     function showImage(n) { // all images hidden and all dots inactive
         images.forEach(function showImgs(image) {
             image.style.display = "none"
-            
+            dots.forEach(function showDot(dot) {
+                dot.classList.remove("active")
+            })
         })
         images[n].style.display = "flex" // after that position passed into  function is made active
+        dots[n].classList.add("active")
     }
     document.addEventListener("load", showImage(currentImage))//  function called when page first loaded
 
@@ -40,19 +43,22 @@ function createCarousel(images) { // reusable function to render a set
 
 // rendering first set 
 const items1 = document.querySelectorAll(".image1") // store images and dots in an array
+const indicator1 = document.querySelectorAll('.dot1')
 
-createCarousel(items1);
+createCarousel(items1, indicator1);
 
 // second set
 const items2 = document.querySelectorAll(".image2") 
+const ind2 = document.querySelectorAll('.dot2')
 
-createCarousel(items2);
+createCarousel(items2, ind2);
 
 
 // third set
 const items3 = document.querySelectorAll(".image3") 
+const ind3 = document.querySelectorAll('.dot3')
 
-createCarousel(items3);
+createCarousel(items3, ind3);
 
 // cycle between story sets
 function showStory(storyName) { // stores each set as array element and changes display attribute
@@ -62,4 +68,12 @@ function showStory(storyName) { // stores each set as array element and changes 
         set[i].style.display = "none";
     }
     document.getElementById(storyName).style.display = "block";
+}
+
+// switch between info page and images
+function showHide(x, y) {
+    if (document.getElementById(x).style.display === "none") {
+        document.getElementById(x).style.display = "block";
+        document.getElementById(y).style.display = "none";
+    } 
 }
