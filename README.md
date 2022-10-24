@@ -1,5 +1,17 @@
 # js-stories
-
+---
+```
+Made By:arihan01
+```
 ---
 
-Just something made with vanilla JS to simulate stories feature seen on apps.
+A vanilla javascript based web app that emulates the stories feature
+
+### FileStructure
+```
+- styles.css        -Stores all css(create new css attributes here.)
+- script.js         -adds logic to website
+- index.html        -main frontend
+```
+---
+---
