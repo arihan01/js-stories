@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .story {
@@ -63,4 +63,23 @@ body {
     align-items: center;
     margin: auto;
     position: relative;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dots #dot {
+    cursor: pointer;
+    margin: 5px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dots #dot.active {
+    background-color: rgba(0, 0, 0, 0.7);
 }
