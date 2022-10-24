@@ -26,6 +26,12 @@
             <a id="prev" title="Previous">PREV</a>
             <a id="next" title="Next">NEXT</a>
         </div>
+
+        <div class="dots">
+            <span id="dot" class="dot1"></span>
+            <span id="dot" class="dot1"></span>
+            <span id="dot" class="dot1"></span>
+        </div>
         <button class="down" onclick="showStory('story2')">DOWN</button>
     </div>
 
@@ -40,17 +46,26 @@
             <a id="prev" title="Previous">PREV</a>
             <a id="next" title="Next">NEXT</a>
         </div>
+        <div class="dots">
+            <span id="dot" class="dot2"></span>
+            <span id="dot" class="dot2"></span>
+        </div>
         <button class="down" onclick="showStory('story3')">DOWN</button>
     </div>
 
     <div id="story3" class="story" style="display: none;">
         <button class="up" onclick="showStory('story2')">UP</button>
         <div id="images" class="images3">
+            <video id="image" class="image3" autoplay loop src="pixels.mp4.mp4"></video>
             <img id="image" class="image3"
                 src="https://images.unsplash.com/photo-1512692723619-8b3e68365c9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
 
             <a id="prev" title="Previous">PREV</a>
             <a id="next" title="Next">NEXT</a>
+        </div>
+        <div class="dots">
+            <span id="dot" class="dot3"></span>
+            <span id="dot" class="dot3"></span>
         </div>
         <button class="down" onclick="showStory('story1')">DOWN</button>
     </div>
