@@ -5,7 +5,7 @@ Made By:arihan01
 ```
 ---
 
-A vanilla javascript based web app that emulates the stories feature
+A vanilla javascript based web app that emulates the stories feature commonly found on social media.
 
 ### FileStructure
 ```
